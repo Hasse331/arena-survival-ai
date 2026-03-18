@@ -75,11 +75,11 @@ The game is developed as a web-based production version to ensure cross-platform
 
 ## Documentation of AI Usage
 
-AI tools (such as ChatGPT) are used in this project as allowed in the course assignment for:
+AI tools (such as ChatGPT/Claude) are used in this project as allowed in the course assignment and general university guidelines:
 
 - brainstorming ideas
 - "vibe coding" the game
-- generating documentation tempates, like this one
+- generating documentation tempates, like this one (used for internal project management, not as a graded course deliverable)
 
 AI tools will not be used for creating the AI player in the game.
 
