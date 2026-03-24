@@ -1,0 +1,11 @@
+export const GAME_WIDTH = 960;
+export const GAME_HEIGHT = 540;
+export const PLAYER_SPEED = 220;
+export const PLAYER_MAX_HEALTH = 100;
+export const PLAYER_DAMAGE_COOLDOWN_MS = 500;
+export const ENEMY_BASE_SPEED = 72;
+export const ENEMY_SPEED_VARIANCE = 42;
+export const ENEMY_BASE_DAMAGE = 10;
+export const SPAWN_INTERVAL_MS = 1150;
+export const SPAWN_ACCELERATION_MS = 20;
+export const MIN_SPAWN_INTERVAL_MS = 350;
