@@ -25,7 +25,7 @@ export class GameOverScene extends Phaser.Scene {
     this.add.text(
       GAME_WIDTH / 2,
       240,
-      `Score: ${data.score}\nSurvival Time: ${data.survivalTime.toFixed(1)}s`,
+      `Score: ${data.score}\nHigh Score: ${data.highScore}\nSurvival Time: ${data.survivalTime.toFixed(1)}s`,
       {
         align: "center",
         fontFamily: "Trebuchet MS",

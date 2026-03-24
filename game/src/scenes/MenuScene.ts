@@ -1,5 +1,6 @@
 import Phaser from "phaser";
 import { GAME_HEIGHT, GAME_WIDTH } from "../game/constants";
+import { getHighScore } from "../game/highscore";
 
 export class MenuScene extends Phaser.Scene {
   constructor() {
@@ -8,6 +9,7 @@ export class MenuScene extends Phaser.Scene {
 
   create(): void {
     this.cameras.main.setBackgroundColor("#081018");
+    const highScore = getHighScore();
 
     const background = this.add.graphics();
     background.fillGradientStyle(0x081018, 0x081018, 0x102336, 0x102336, 1);
@@ -35,6 +37,12 @@ export class MenuScene extends Phaser.Scene {
         lineSpacing: 10
       }
     ).setOrigin(0.5);
+
+    this.add.text(GAME_WIDTH / 2, 225, `High Score: ${highScore}`, {
+      fontFamily: "Trebuchet MS",
+      fontSize: "24px",
+      color: "#b9ffb9"
+    }).setOrigin(0.5);
 
     this.createButton(GAME_WIDTH / 2, 285, "Play as Human", true, () => {
       this.scene.start("game");
